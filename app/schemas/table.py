@@ -11,4 +11,4 @@ class TableCreate(TableBase):
 class Table(TableBase):
     id: int
     class Config:
-        from_attributes = True  # Для работы с SQLAlchemy
+        from_attributes = True
