@@ -16,8 +16,8 @@ REST API для бронирования столиков в ресторане,
 1. Убедитесь, что Docker и Docker Compose установлены.
 2. Склонируйте репозиторий:
 ```bash
-   git clone https://github.com/Kanres-GH/Hightalent-Gaisin-Temirlan.git
-   cd hightalent-junior-python-dev
+git clone https://github.com/Kanres-GH/Hightalent-Gaisin-Temirlan.git
+cd hightalent-junior-python-dev
 ```
 3. Установите необходимые зависимости:
 ```bash
@@ -26,7 +26,7 @@ pip install -r requirements.txt
 
 4. Запустите проект:
 ```bash
-    docker-compose up --build -d
+docker-compose up --build -d
 ```
 5. API будет доступно на http://localhost:8000. Swagger UI доступен на http://localhost:8000/docs
 
@@ -59,9 +59,7 @@ curl http://localhost:8000/reservations/
 curl -X DELETE http://localhost:8000/reservations/1
 ```
 
-## Тестирование
-Локально (требуется установить зависимости из requirements.txt):
-```bash
-pytest
-```
+## Миграции
+
+Миграции применяются автоматически при запуске контейнера `app` через `alembic upgrade head`.
 
